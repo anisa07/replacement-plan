@@ -95,7 +95,7 @@ describe('battery-service', () => {
     })
   })
 
-  describe.only('getBatteryMoreThanDayMeasures', () => {
+  describe('getBatteryMoreThanDayMeasures', () => {
     it('should group battery measures into more-than-one-day intervals', () => {
       const measures: Battery[] = [battery1, battery2, battery3, battery4]
       const moreThanDayMeasures = getBatteryMoreThanDayMeasures(measures)
